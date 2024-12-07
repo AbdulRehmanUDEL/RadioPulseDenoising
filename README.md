@@ -21,11 +21,7 @@ This notebook defines the architecture of the CNNs and handles their training.
 ### 3. Apply_Networks
 This notebook tests the pre-trained models on the sample dataset.
 
-
-
-## Acknowledgments and Reference Proceedings:
-
-We want to acknowledge the **Tunka-Rex** people, **Kostunin, Dmitriy** (dmitriy.kostunin@desy.de and github @kostunin) and **Dmitry Shipilov** (justforprince@gmail.com and github @Dofollow), for sharing their CNN code with us, which became the basis for this work, their code can be found here: https://gitlab.iap.kit.edu/tunkarex/denoiser
+## Reference Proceedings:
 
 The following are the proceedings that were written for this work:
 
@@ -36,3 +32,9 @@ The following are the proceedings that were written for this work:
 3- Deep Learning for the Classification and Recovery of Cosmic-Ray Radio Signals against Background Measured at the South Pole. Link: https://pos.sissa.it/424/012/
 
 4 -Classification and Denoising of Cosmic-Ray Radio Signals using Deep Learning. Link: https://pos.sissa.it/395/417/pdf
+
+## Acknowledgments:
+
+We want to acknowledge the **Tunka-Rex** people, **Kostunin, Dmitriy** (dmitriy.kostunin@desy.de and github [@kostunin](https://github.com/kostunin)) and **Dmitry Shipilov** (justforprince@gmail.com and github @Dofollow), for sharing their CNN code with us, which became the basis for this work, their code can be found here: https://gitlab.iap.kit.edu/tunkarex/denoiser
+
+
