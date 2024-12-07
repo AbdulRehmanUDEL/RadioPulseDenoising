@@ -25,7 +25,7 @@ This notebook tests the pre-trained models on the sample dataset.
 
 ## Acknowledgments and Reference Proceedings:
 
-We want to acknowledge the **Tunka-Rex** people for sharing their CNN code with us, which became the basis for this work, their code can be found here: https://gitlab.iap.kit.edu/tunkarex/denoiser
+We want to acknowledge the **Tunka-Rex** people, **Kostunin, Dmitriy** (dmitriy.kostunin@desy.de and github @kostunin) and **Dmitry Shipilov** (justforprince@gmail.com and github @Dofollow), for sharing their CNN code with us, which became the basis for this work, their code can be found here: https://gitlab.iap.kit.edu/tunkarex/denoiser
 
 The following are the proceedings that were written for this work:
 
