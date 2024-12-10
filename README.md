@@ -3,7 +3,7 @@
 This repository contains scripts for the construction and training of convolutional neural networks (CNNs) designed for classifying and denoising radio pulses from cosmic-ray air showers. The CNNs were developed and trained using TensorFlow and Keras, so these libraries are required to run the provided scripts. 
 
 The repository is organized as follows:
-- **`model/`**: Contains the pre-trained networks.
+- **`models/`**: Contains the pre-trained networks.
 - **`data/`**: Includes waveforms that can be used to test the pre-trained models.
 - **Notebooks**: Provide essential workflows for data preprocessing, network training, and model application.
 
