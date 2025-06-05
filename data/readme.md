@@ -1,7 +1,9 @@
-This folder contains data that can be used to test the trained networks.
+---
+# Test Data
 
-PureSignals are CoREAS waveforms without any noise added to them.
+This folder contains data for testing the trained networks.
 
-SigPlusNoise are waveforms with added noise.
+* **PureSignals**: These are simulated waveforms generated using the CoREAS software, with no added noise.
+* **SigPlusNoise**: These waveforms are a combination of CoREAS simulations and measured radio noise from the IceTop enhancement prototype station's antenna.
 
-Both wavefroms are processed and filtered in the [70 - 350] MHz band.
+Both waveform sets have been processed and filtered within the **[70 - 350] MHz** band.
