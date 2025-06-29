@@ -6,6 +6,10 @@ The repository is organized as follows:
 - **`models/`**: Contains the pre-trained networks.
 - **`data/`**: Includes waveforms that can be used to test the pre-trained models.
 - **Notebooks**: Provide essential workflows for data preprocessing, network training, and model application.
+### Note
+Please note that the data provided in the "**data**" directory is intended exclusively for testing the already trained models found in the "**models**" directory.
+
+If you plan to use the `DataReshapingForNetworks.ipynb` script, you will need to create and input your own antenna channel data. This data should be processed by combining signal and noise waveforms.
 
 ## Notebooks Overview
 
