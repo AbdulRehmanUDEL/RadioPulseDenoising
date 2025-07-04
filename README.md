@@ -4,12 +4,11 @@ This repository contains scripts for the construction and training of convolutio
 
 The repository is organized as follows:
 - **`models/`**: Contains the pre-trained networks.
-- **`data/`**: Includes waveforms that can be used to test the pre-trained models.
-- **Notebooks**: Provide essential workflows for data preprocessing, network training, and model application.
-### Note
-Please note that the data provided in the "**data**" directory is intended exclusively for testing the already trained models found in the "**models**" directory.
+- **`data/`**: Contains waveform datasets used for testing and demonstration.
+  - **`sample_set/`**: A small sample of waveforms that can be used to see how the data is prepared for training the neural networks. This is not sufficient for actual model training — a larger dataset should be prepared in the same format as demonstrated here.
+  - **`validation_data/`**: A validation dataset for evaluating the performance of the provided pre-trained models. This data is intended exclusively for testing the already trained models found in the "**models**" directory.
 
-If you plan to use the `DataReshapingForNetworks.ipynb` script, you will need to create and input your own antenna channel data. This data should be processed by combining signal and noise waveforms.
+- **Notebooks**: Provide essential workflows for data preprocessing, network training, and model application.
 
 ## Notebooks Overview
 
@@ -20,10 +19,10 @@ This notebook preprocesses waveform data for network training. It reshapes wavef
 - Splitting the data into training and test sets.
 
 ### 2. NetworksArchAndTraining
-This notebook defines the architecture of the CNNs and handles their training.
+This notebook defines the architecture of the CNNs (both Classifier and Denoiser) and handles their training.
 
 ### 3. Apply_Networks
-This notebook tests the pre-trained models on the sample dataset.
+This notebook evaluates the pre-trained networks located in the /models directory using the validation dataset.
 
 ## Reference Proceedings:
 
