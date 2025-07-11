@@ -1,5 +1,5 @@
-This folder contains the trained networks.
+This folder contains the pre-trained neural network models.
 
-ant1_classifier is the models that is trained to identify radio signal traces.
+- **`classifier`**: A model trained to identify radio signal traces and background traces.
 
-ant1_denoiser is the models used to denoise the noisy traces.
+- **`denoiser`**: A model designed to recover clean radio pulses from noisy traces by removing background noise.

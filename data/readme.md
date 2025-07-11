@@ -1,13 +1,20 @@
----
-# Test Data
+This folder contains waveform datasets for testing and demonstrating the trained networks. It consists of the following subdirectories:
 
-This folder contains data for testing the trained networks.  
+- **`sample_set/`**: Contains individual-channel waveform files such as `ch0_NoiseOnly.npz`, `ch1_Signals.npz`, etc.  
+  Each file stores a NumPy array of shape **(N, 1000)**, where:
+  - **N** is the number of waveforms  
+  - **1000** is the number of time samples per waveform  
 
-* **PureSignals**: These are simulated waveforms generated using the CoREAS software, with no added noise.
-* **SigPlusNoise**: These waveforms are a combination of CoREAS simulations and measured radio noise from the IceTop enhancement prototype station's antenna.
+  The two channels represent the two polarizations of the antenna.
 
-Both waveform sets have been processed and filtered within the **[70 - 350] MHz** band. The data is stored in **NumPy files** as arrays with a shape of $(N, 1000, 2)$. In this structure:
+  The provided notebook **`DataReshapingForNetworks.ipynb`** can be used to combine corresponding channel files into a single two-channel input suitable for training the classifier and denoiser networks.
 
-* **$N$** denotes the total number of samples.
-* **$1000$** represents the length of each channel's waveform.
-* **$2$** corresponds to the two polarization channels.
+- **`validation_data/`**: Contains already combined, two-channel waveform data stored as NumPy arrays of shape **(N, 1000, 2)**, where:
+  - **N** denotes the total number of samples  
+  - **1000** represents the length of each channel's waveform  
+  - **2** corresponds to the two polarization channels  
+
+  These are used to evaluate the performance of the pre-trained models directly, without additional preprocessing.
+
+All waveforms have been bandpass-filtered to the **[70 – 350] MHz** range and are stored in compressed NumPy `.npz` format.
+
